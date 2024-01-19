@@ -18,17 +18,32 @@ else
 {console.log('Ми йдемо в інше кафе')}
 
 
+
+function checkFoodAvailability(hamburgers, potatoes) {
+    if (hamburgers >= 4 && potatoes >= 1) {
+        console.log("Ми поїли");
+    } else {
+        console.log("Ми йдемо в інше кафе");
+    }
+}
+
+checkFoodAvailability(4, 1);
+
+
+
+
+
 // 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900
 // включно.
 //     Результат виводити в консоль.
 
-let productPrice = 1200;
-
-if (productPrice >= 1000 && productPrice <=1900)
-
-{console.log('В діапазоні')}
-else
-{console.log('Поза діапазоном')}
+// let productPrice = 1200;
+//
+// if (productPrice >= 1000 && productPrice <=1900)
+//
+// {console.log('В діапазоні')}
+// else
+// {console.log('Поза діапазоном')}
 
 
 // 3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
@@ -178,6 +193,8 @@ else
 let regexp = /[aeiouyAEIOUY]/g;
 
 console.log(word.replace(regexp, ''));
+
+
 
 // 14.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
 //     так щоб в консоль виводився результат обчислень з правильним закінченням.
